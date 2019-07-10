@@ -1,0 +1,56 @@
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    .content-left {
+      width: 190px;
+      height: 100%;
+      border-right: 1px #dddde1 solid;
+      background: #f3f3f5;
+      color: #000;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      flex-shrink: 0;
+      .menu-item {
+        height: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &.menu-active {
+          border-left: 2px solid #df3b3b;
+          background: #dddde1;
+        }
+        span {
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-right: 8px;
+        }
+      }
+      .menu-title {
+        font-size: 12px;
+        color: #949494;
+        display: inline-block;
+        margin-left: 8px;
+        margin-top: 20px;
+      }
+      :global(.app-icon) {
+        font-size: 18px;
+        margin: 8px;
+      }
+    }
+    .content-right {
+      width: calc(100% - 191px);
+      height: 100%;
+    }
+  }
+}
