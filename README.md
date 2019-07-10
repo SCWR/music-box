@@ -1,6 +1,6 @@
 # 网易云音乐-eletrion简易版
 
-> 一个使用了 React + Redux + React-Router + Eletrion 的桌面应用
+> 一个使用了 React + Redux + React-Router + Eletrion 的桌面音乐应用
 
 ## 感谢: 请求API目录 **./api-server** 来自于 [**网易云音乐 API** 3.18.3](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
